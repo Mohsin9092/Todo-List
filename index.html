@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+
+            <h1> Todo List</h1>
+            <ul>
+                <li><a href="" onclick=" return addtask()">Add Task</a></li>
+                <li><a href="" onclick="return showtask()">Show Tasks</a></li>
+                <li><a href="" onclick=" return removetask()">Remove Task</a></li>
+            </ul>
+            <p id="showtask"></p>
+            <p id="secondpara"> 👋 Welcome to our To-Do List!<br>
+                Here you can manage your tasks easily:<br>
+                ➤ Click <strong>"Add Task"</strong> to create a new task.<br>
+                ➤ Click <strong>"Show Tasks"</strong> to view all tasks.<br>
+                ➤ Click <strong>"Remove Task"</strong> to delete a task by ID.<br>
+                ➤ Click <strong>"Mark Tasks as Done/NotDone"</strong><br>
+                Start managing your day efficiently!</p>
+            <div class="inputs">
+                <label for="input1">Id:</label><input type="number" class="input" readonly id="input1"
+                    placeholder="Task id">
+                <br><label for="input2">Enter Title:</label> <input type="text" class="input" id="input2" name="text"
+                    placeholder="please enter task Title">
+                <br><label for="input3">Enter Status:</label><input type="text" class="input" id="input3"
+                    placeholder="Enter task Status Done/Notdone">
+                <br> <button onclick="add()" class="but" id="lastbtn">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+
+</html>
